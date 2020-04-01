@@ -1,0 +1,128 @@
+<!doctype html>
+<html lang="en">
+ <head>
+  <meta charset="UTF-8">
+  <meta name="Generator" content="EditPlus®">
+  <meta name="Author" content="">
+  <meta name="Keywords" content="">
+  <meta name="Description" content="">
+  <title>Document</title>
+ </head>
+ <body>
+  <!-- <ul>
+  	<li>唐僧</li>
+  	<li>孙悟空</li>
+  	<li>猪八戒</li>
+  	<li>莎僧</li>
+  </ul> -->
+
+<!--   <div>
+  	<a href="#">武松</a>
+  	<a href="#">宋江</a>
+  	<a href="#">李逵</a>
+  </div> -->
+
+  <!-- 用户名<input type="text" id="username">
+  <ul>
+  	<li class="aa">好好学习</li>
+  	<li class="aa">天天向上</li>
+  	<li class="aa">加油</li>
+  	<li>天天学习</li>
+  </ul> -->
+
+ <!--  <h3>hello jquery</h3>
+  	<input type="button" value="点击" id="btn">
+  	 <input type="text" id="username"> -->
+    <!--下拉菜单 做内容改变事件-->
+   <!--  <select id="changeColor">
+        <option value="red">红色</option>
+        <option value="green">绿色</option>
+        <option value="blue">蓝色</option>
+    </select> -->
+    	<!--给form表单绑定提交事件-->
+   <!--  <form action="1.php" method="post" id="myform">
+        <input type="text" name="username">
+        <input type="submit" value="添加">
+    </form> -->
+
+     <style>
+        .d{
+            width: 100px;
+            height: 100px;
+            border: 2px solid red;
+        }
+    </style>
+</head>
+<body>
+    <div>hello php</div>
+    <div>hello js</div>
+ </body>
+</html>
+<script src="../jquery.js"></script>
+<script>
+	//1.定义一个无序列表   实现each循环的打印下标    打印获取到的每一个对象   
+	/*$(document).ready(function(){
+		var _li=$("li");
+		_li.each(function(key){
+			console.log($(this));
+		})
+	})*/
+	//2.定义3个超链接   实现each循环的打印下标
+	/*$(document).ready(function(){
+		var _a=$("a");
+		_a.each(function(key){
+			console.log($(this));
+		})
+	})*/
+	//3.实现四种选择器的例子演示
+	//var _username=$("#username");
+	//console.log(_username);
+	//var _biaoqian=$("li");
+	//console.log(_biaoqian);
+	//var _aa=$(".aa");
+	//console.log(_aa);
+	//var _shuxing=$("[class]");
+	//console.log(_shuxing);
+	//4.实现6中事件的例子演示
+	//$(document).ready(function(){
+	//	alert('123');
+	//})
+	//$(document).ready(function(){
+		//$("#btn").click(function(){
+			//alert('点击事件触发了');
+	//	})
+	//})
+	//$(document).ready(function(){
+	//	$("#username").focus(function(){
+	//		alert('获取焦点触发了');
+	//	})
+	//})
+	// $(document).ready(function(){
+	// 	$("#username").blur(function(){
+	// 		alert('失去焦点触发了');
+	// 	})
+	// })
+	// $(document).ready(function(){
+	// 	$("#changeColor").change(function(){
+	// 		alert('内容改变触发了');
+	// 	})
+	// })
+	// $(document).ready(function(){
+	// 	$("#myform").submit(function(){
+	// 		alert('表单提交触发了');
+	// 	})
+	// })
+	// 5.实现增加样式  和移除样式的例子的演示  
+	// $(document).ready(function(){
+	// 	$("div").click(function(){
+	// 		var _this=$(this);
+	// 		_this.addClass('d');
+	// 	})
+	// })
+	$(document).ready(function(){
+		$("div").click(function(){
+			var _this=$(this);
+			_this.removeClass('d');
+		})
+	})
+</script>

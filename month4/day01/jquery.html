@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="en">
+ <head>
+  <meta charset="UTF-8">
+  <meta name="Generator" content="EditPlus®">
+  <meta name="Author" content="">
+  <meta name="Keywords" content="">
+  <meta name="Description" content="">
+  <title>Document</title>
+  <!--引入jquery文件-->
+  	<script src="../jquery.js"></script>
+ </head>
+ <body>
+  用户名<input type="text" id="username">
+  <ul>
+  	<li class="aa">好好学习</li>
+  	<li class="bb">天天向上</li>
+  	<li>加油</li>
+  	<li>天天学习</li>
+  </ul>
+ </body>
+</html>
+<script>
+     //此位置写jquery代码
+     //1.
+    // var _input=$("#username");
+     //console.log(_input);
+     //2.
+    // var _li=$(".aa")
+    // console.log(_li);
+   //3. 标签选择器 ==**$("标签名")**==
+   //var _biaoqian=$("li");
+   //console.log(_biaoqian);
+   //4.属性选择器  ==**$("[属性名]")**== ------属性选择器使用比较灵活
+   //var _shuxing=$("[class]");
+   //console.log(_shuxing);
+   //4.1
+   //var _shuxing=$("li[class]")
+  // console.log(_shuxing);
+  // 4.2
+  var _shuxing=$("li[class='aa']");
+  console.log(_shuxing);
+  </script>

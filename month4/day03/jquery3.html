@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <div id="div_test" style="width: 200px;height: 200px;border:1px solid red;">
+        
+        <!-- 这些是子节点 -->
+        <h3>hello jquery</h3>
+        <h3>hello mysql</h3>
+        <h3>hello php</h3>
+        <p>hello段落</p>
+
+    </div>
+    <form action="">
+    <div id="test1" style="width:300px;height: 300px; border:1px solid red;">
+        <span id="span1">我是字节点1</span>
+        <ul>
+            <li>宝马</li>
+            <!-- //索引值 是0 -->
+            <li>奔驰</li>
+            <!-- 索引值是1  -->
+            <li id="aodi">奥迪</li>
+             <!-- 索引值是2 -->
+             <li>大众</li>
+             <!-- 索引值是  3 -->
+        </ul>
+    </div>
+    </form>
+<!-- 说明div中id为div_test这个父节点有三个子节点 -->
+    
+</body>
+</html>
+<script src="../jquery.js"></script>
+<script>
+//1.使用find()查找字节点    
+//查找到id为div_test下的子节点     
+//语法是:   对象.find('子节点的名称')
+// var _find =$("#div_test").find("p");
+// console.log(_find);
+//2.使用children查找子节点  
+//语法是   对象.children();
+//如果在括号里不指定的话  查找所有的子节点  
+//如果在括号里指定了   就查找指定的子节点  
+// var _children =$("#div_test").children();
+// console.log(_children);
+// var _children =$("#div_test").children('p');
+// console.log(_children);
+//3.使用parent查找父级节点   
+    // 对象.parent()
+    // var _parent =$("#span1").parent();
+    // console.log(_parent);
+//4.使用parents查找祖先级节点    
+// 对象.parents("祖先级节点的名称")
+// var _form=$("#span1").parents("form");
+// console.log(_form);
+//5.1使用first查找标签中的第一个    
+// 语法是   对象.first()
+//var _first=$("li").first();
+//console.log(_first);
+
+// var _first=$("li").first();
+// console.log(_first);
+
+//5.2 使用last查找标签中最后一个
+//语法是  对象.last()
+//var _last=$("li").last();
+//console.log(_last);
+
+// var _last=$("li").last();
+// console.log(_last);
+
+// 5.3 获取所有li中指定的索引值    
+//对象.eq(索引值)
+//var _eq=$("li").eq(1);
+//括号里 如果写1表示的是获取索引值为1的    
+//console.log(_eq);
+
+// var _eq=$("li").eq(1);
+// console.log(_eq);
+
+//6.1找到id为aodi的上一个兄弟节点   prev()
+//语法是  对象.prev()
+//var _prev=$("#aodi").prev();
+//console.log(_prev);
+
+//var _prev=$("#aodi").prev();
+//console.log(_prev);
+
+//6.2.找到id为aodi的下一个兄弟节点    next
+//语法是  对象.next()
+//var _next=$("#aodi").next();
+//console.log(_next);
+
+// var _next=$("#aodi").next();
+// console.log(_next);
+
+//6.3.找到id为aodi的所有兄弟节点   
+//语法是  对象.siblings
+//var _siblings=$("#aodi").siblings();
+//console.log(_siblings);
+
+// var _siblings=$("#aodi").siblings();
+// console.log(_siblings);
+
+//结果是   三个兄弟节点   但是不包括自己  
+//7.1 使用  :gt  :lt过滤dom节点   
+//查找所有li中  索引小于2的  
+//var _lt=$("li:lt(2)");//解析代码   li表示的标签名字  :lt小于的意思  括号里的2 表示的是索引值   
+//console.log(_lt);
+
+// var _lt=$("li:lt(2)");
+// console.log(_lt);
+
+//7.2 :gt表示的大于 
+//查找所有li中索引大于2的   
+//var _gt=$("li:gt(2)");//解析代码   li表示的标签名字  :gt表示大于的意思  括号里的2 表示的是索引值   
+ //console.log(_gt);
+ 
+// var _gt=$("li:gt(2)");
+// console.log(_gt);
+
+//8.1 :odd :even 
+//选择索引值为奇数元素的   从0开始计数   
+//var _odd=$("li:odd");
+//console.log(_odd);
+
+// var _odd=$("li:odd");
+// console.log(_odd);
+
+//8.2 :even   选择索引值为偶数元素的   从0开始计数   
+//var _even=$("li:even");
+//console.log(_even);
+
+var _even=$("li:even");
+console.log(_even);
+
+</script>

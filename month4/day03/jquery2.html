@@ -1,0 +1,18 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+</head>
+<body>
+    <div style="width: 200px;height: 200px;border: 1px solid red;" id="div_test">
+      <h3>hello php</h3>
+    </div>
+</body>
+</html>
+<script src="../jquery.js"></script>
+<script>
+	//克隆 clone()   对象.clone() 
+	var _clone=$("#div_test").clone();
+	console.log(_clone);
+	$("#div_test").after(_clone);
+</script>

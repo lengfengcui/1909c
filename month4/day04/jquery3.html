@@ -1,0 +1,27 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <!--css的样式 类-->
+    <style>
+        .d{
+            width: 100px;
+            height: 100px;
+            border: 2px solid red;
+        }
+    </style>
+</head>
+<body>
+    <div>hello php</div>
+    <div>hello js</div>
+</body>
+</html>
+<script src="../jquery.js"></script>
+<script>
+   $(document).ready(function(){
+    $("div").click(function(){
+        var _this=$(this);
+        _this.removeClass('d');
+    })
+   })
+</script>

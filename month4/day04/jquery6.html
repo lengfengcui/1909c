@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="en">
+ <head>
+  <meta charset="UTF-8">
+  <meta name="Generator" content="EditPlus®">
+  <meta name="Author" content="">
+  <meta name="Keywords" content="">
+  <meta name="Description" content="">
+  <title>Document</title>
+  <style>
+  	li{
+  		float:left;
+  		list-style:none;
+  		width:100px;
+  		height:100px;
+  	}
+  	.test{
+  		background:aqua;
+  		border:1px solid red;
+  	}
+  </style>
+ </head>
+ <body>
+  <ul>
+  	<li>唐僧</li>
+  	<li>孙悟空</li>
+  	<li>猪八戒</li>
+  	<li>莎僧</li>
+  </ul> 
+ </body>
+</html>
+<script src="../jquery.js"></script>
+<script>
+	/*$(document).ready(function(){
+		$("li").click(function(){
+			//console.log($(this));
+			var _this=$(this);
+			//console.log(_this);
+			$("li").removeClass("test");
+			_this.addClass("test");
+		})
+	})*/
+	$(document).ready(function(){
+		$("li").click(function(){
+			var _this=$(this);
+			$("li").removeClass("test");
+			_this.addClass("test");
+		})
+	})
+</script>

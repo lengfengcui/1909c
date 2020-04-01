@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="en">
+ <head>
+  <meta charset="UTF-8">
+  <meta name="Generator" content="EditPlus®">
+  <meta name="Author" content="">
+  <meta name="Keywords" content="">
+  <meta name="Description" content="">
+  <title>Document</title>
+ </head>
+ <body>
+  <div id="aa" style="height:200px;width:200px;border:1px solid red"><h3>hello jquery</h3></div>
+ </body>
+</html>
+<script src="../jquery.js"></script>
+<script>
+	//内部后边 append()   对象.append("内容")
+	//$("#aa").append("<h3>hello js</h3>");
+	//$("#aa").append("<input type='text' placeholder='文本框...'>");
+	//$("#aa").append("<textarea cols='10' rows='2' placeholder='文本域...'></textarea>");
+	//内部前边 prepend()  对象.prepend("内容")
+	//$("#aa").prepend("<h3>hello html</h3>");
+	//$("#aa").prepend("<input type='text' placeholder='文本框...'>");
+	//$("#aa").prepend("<textarea cols='10' rows='2' placeholder='文本域...'></textarea>");
+	//外部后边  after()   对象.after("内容")
+	//$("#aa").after("<h3>hello html</h3>");
+	//$("#aa").after("<input type='text' placeholder='文本框...'>");
+	//$("#aa").after("<textarea cols='10' rows='2' placeholder='文本域...'></textarea>");
+	//外部前边 before()  对象.before("内容")
+	//$("#aa").before("<h3>hello mysqli</h3>");
+	//$("#aa").before("<input type='text' placeholder='文本框...'>");
+	//$("#aa").before("<textarea cols='10' rows='2' placeholder='文本域...'></textarea>");
+	//empty()  删除掉匹配标签内部的内容    对象.empty()
+	//$("#aa").empty();
+	//remove() 删除掉匹配标签以及内部的内容  对象.remove()
+	//$("#aa").remove();
+	//克隆 clone()   对象.clone() 
+	var _clone=$("#aa").clone();
+	console.log(_clone);
+	$("#aa").after(_clone);
+</script>

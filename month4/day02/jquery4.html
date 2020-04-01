@@ -1,0 +1,106 @@
+<!doctype html>
+<html lang="en">
+ <head>
+  <meta charset="UTF-8">
+  <meta name="Generator" content="EditPlus®">
+  <meta name="Author" content="">
+  <meta name="Keywords" content="">
+  <meta name="Description" content="">
+  <title>Document</title>
+ </head>
+ <body>
+  <h3>hello jquery</h3>
+  	<input type="button" value="点击" id="btn">
+  	 <input type="text" id="username">
+    <!--下拉菜单 做内容改变事件-->
+    <select id="changeColor">
+        <option value="red">红色</option>
+        <option value="green">绿色</option>
+        <option value="blue">蓝色</option>
+    </select>
+    	<!--给form表单绑定提交事件-->
+    <form action="1.php" method="post" id="myform">
+        <input type="text" name="username">
+        <input type="submit" value="添加">
+    </form>
+ </body>
+</html>
+<script src="../jquery.js"></script>
+<script>
+	//页面加载
+	/*$(document).ready(function(){
+		alert("111");
+	})*/
+
+	/*$(document).ready(function(){
+		alert('要跨年了');
+	})*/
+
+	//1.点击事件  **对象.click(function(){     })
+	/*$(document).ready(function(){
+		$("#btn").click(function(){
+			alert("点击事件触发了");
+		})
+	})*/
+
+	/*$(document).ready(function(){
+		$("#btn").click(function(){
+			alert('点击事件触发了');
+		})
+	})*/
+
+	//获取焦点事件  **对象.focus(function(){     })
+	/*$(document).ready(function(){
+		$("#username").focus(function(){
+			alert('获取焦点事件触发了');
+		})
+	})*/
+
+	/*$(document).ready(function(){
+		$("#username").focus(function(){
+			alert('获取焦点事件触发了');
+		})
+	})*/
+
+	//失去焦点   对象.blur(function(){     })
+	/*$(document).ready(function(){
+		$("#username").blur(function(){
+			alert('失去焦点触发了');
+		})
+	})*/
+
+	/*$(document).ready(function(){
+		$("#username").blur(function(){
+			alert("失去焦点触发了");
+		})
+	})*/
+
+	//内容改变事件   **对象.change(function(){     })
+	/*$(document).ready(function(){
+		$("#changeColor").change(function(){
+			alert('内容改变事件触发了');
+		})
+	})*/
+
+	/*$(document).ready(function(){
+		$("#changeColor").change(function(){
+			alert("内容改变事件触发了");
+		})
+	})*/
+
+	//表单提交事件  **对象.submit(function(){     })
+	/*$(document).ready(function(){
+		$("#myform").submit(function(){
+			alert('表单提交事件触发了');
+			//允许或者阻止表单提交
+			//return true;
+		})
+	})*/
+
+	$(document).ready(function(){
+		$("#myform").submit(function(){
+			//alert("表单提交事件触发了");
+			return true;
+		})
+	})
+</script>

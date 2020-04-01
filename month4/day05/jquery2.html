@@ -1,0 +1,27 @@
+<!doctype html>
+<html lang="en">
+ <head>
+  <meta charset="UTF-8">
+  <meta name="Generator" content="EditPlus®">
+  <meta name="Author" content="">
+  <meta name="Keywords" content="">
+  <meta name="Description" content="">
+  <title>Document</title>
+ </head>
+ <body>
+  用户名<input type="text" id="uname">
+ </body>
+</html>
+<script src="../jquery.js"></script>
+<script>
+		$.ajax({
+			url:"checkEname.php",
+			type:"post",
+			data:{unames:'哈哈'},
+			async:true,
+			success:function(res){
+				console.log(res);
+			}
+		})
+		console.log('啦啦啦啦啦');
+</script>

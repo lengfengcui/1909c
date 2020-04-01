@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="en">
+ <head>
+  <meta charset="UTF-8">
+  <meta name="Generator" content="EditPlus®">
+  <meta name="Author" content="">
+  <meta name="Keywords" content="">
+  <meta name="Description" content="">
+  <title>Document</title>
+ </head>
+ <body>
+  <div class="aa" id="bb" cate_id="cc" style="width:150px;height:150px;border:1px solid red;">jquery获取属性 和设置属性</div>
+ </body>
+</html>
+<!-- 引入jquery.js -->
+<script src="../jquery.js"></script>
+<script>
+		/*
+		jquery获取属性 设置属性
+		//属性分为:   内置属性   自定义属性
+		语法:  获取属性
+		对象.prop("属性名"); 
+		      设置  修改属性 
+		      对象.prop("属性名",新值);
+		*/
+		//1.首先根据id找到对象
+		//var _bb=$("#bb").prop("class");
+		//console.log(_bb);
+		//2.修改 设置属性   
+		//语法是:    对象.prop("属性名",'新值');
+		//参数2如果这个新值是字符串 要加'' 和上面的语法保持一致   如果是整数就不用加''了
+		//var _bb=$("#bb").prop("class","jquery");
+		//console.log(_bb);
+		//3.jquery获取自定义属性  设置自定义属性
+		//获取自定义属性的语法:     对象.attr("属性名");
+		var cate_id=$("#bb").attr("cate_id");
+		console.log(cate_id);
+		//设置属性    语法是:对象.attr("属性名","新值");
+		//var cate_id=$("#bb").attr("cate_id","mysqli");
+</script>

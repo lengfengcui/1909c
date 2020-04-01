@@ -1,0 +1,71 @@
+<!doctype html>
+<html lang="en">
+ <head>
+  <meta charset="UTF-8">
+  <meta name="Generator" content="EditPlus®">
+  <meta name="Author" content="">
+  <meta name="Keywords" content="">
+  <meta name="Description" content="">
+  <title>Document</title>
+ </head>
+ <body>
+  用户名<input type="text" id="uname"><span id="span_uname"></span>
+ </body>
+</html>
+<script src="../jquery.js"></script>
+<script>
+	/*$(document).ready(function(){
+		$("#uname").blur(function(){
+			var uname=$("#uname").val();
+			//console.log(uname);
+			$.post(
+				"checkName.php",
+				{unames:uname},
+				function(res){
+					if(res=='no'){
+						$("#span_uname").html("该用户已存在");
+					}else{
+						$("#span_uname").html("√");
+					}
+				}
+			)
+		})
+	})*/
+	/*$(document).ready(function(){
+		$("#uname").blur(function(){
+			var uname=$("#uname").val();
+			//console.log(uname);
+			$.get(
+				"checkName.php",
+				{unames:uname},
+				function(res){
+					if(res=='no'){
+						$("#span_uname").html("该用户已存在");
+					}else{
+						$("#span_uname").html("√");
+					}
+				}
+			)
+		})
+	})*/
+	$(document).ready(function(){
+		$("#uname").blur(function(){
+			var uname=$("#uname").val();
+			//console.log(uname);
+			$.ajax({
+				url:"checkName.php",
+				type:'get',
+				data:{unames:uname},
+				async:'true',
+				success:function(res){
+					//console.log(res);
+					if(res=='no'){
+						$("#span_uname").html("该用户已存在");
+					}else{
+						$("#span_uname").html("√");
+					}
+				}
+			})
+		})
+	})
+</script>
